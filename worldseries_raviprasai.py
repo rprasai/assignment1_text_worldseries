@@ -1,5 +1,7 @@
 winners = open("WorldSeriesWinners.txt", "r")
-year = int(input("Enter the Year between 1903-2009: "))
+year = int(input("Enter the Year from 1903 to 2008: "))
+while year == 1904 or year == 1994 or year > 2008:
+    year = int(input("No games palyed in these years : "))
 # year = 1907
 champ = winners.read()
 champ = champ.split("\n")
